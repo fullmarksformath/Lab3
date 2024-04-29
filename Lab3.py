@@ -1,5 +1,7 @@
 print("Lab 3 - Software Unit Testing with PyTest")
 
+import numpy as np
+
 SORT_ASCENDING = 0
 SORT_DESCENDING = 1
 
@@ -33,8 +35,20 @@ def bubble_sort(arr, sorting_order):
                 else:
                     # Return an empty array
                     arr_result = []
+    if n==0:
+        # If array is empty
+        return 0
+    if n>=10:
+        # If array has 10 or more elements
+        return 1
+
     else:
         arr_result = -1
+
+    for i in range(n):
+        # If any element in array is not integer
+        if not isinstance(arr[i],int):
+            return 2
 
     return arr_result
 
