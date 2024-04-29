@@ -1,5 +1,5 @@
-import Lab3
 
+import Lab3
 print("Test_Lab3")
 
 
