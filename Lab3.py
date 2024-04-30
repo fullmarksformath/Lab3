@@ -42,9 +42,6 @@ def bubble_sort(arr, sorting_order):
         # If array has 10 or more elements
         return 1
 
-    else:
-        arr_result = -1
-
     for i in range(n):
         # If any element in array is not integer
         if not isinstance(arr[i],int):
